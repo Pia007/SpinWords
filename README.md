@@ -14,7 +14,7 @@ Spin Word Function
 
 ### The Challenge
 
-<!-- [![wakatime](https://wakatime.com/badge/github/Pia007/TwoSum.svg)](https://wakatime.com/badge/github/Pia007/TwoSum) -->
+[![wakatime](https://wakatime.com/badge/github/Pia007/SpinWords.svg)](https://wakatime.com/badge/github/Pia007/SpinWords)
 
 Two Sum Function
 
