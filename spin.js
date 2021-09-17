@@ -10,36 +10,80 @@
 // spinWords("This is a test") => "This is a test" 
 // spinWords("This is another test") => "This is rehtona test"
 
-function spinWords(words) {
+function spinWords(str) {
+
+    let lenthOfString = str.length;
+
     //convert the word/s to an array
-    let wordArray = words.split(" ");
+    let arr = str.split(" ");
     // confirm that the input is now an array
-    console.log(wordArray)
-    let newWordArray = [];
-
-    wordArray.forEach(function(word, arr){
-        
-        if (word.length >= 5) {
-            let splitWordArray = word.split("")
-            console.log(splitWordArray);
-
-            let reverseWord = splitWordArray.reverse();
-            console.log(reverseWord);
-
-            let joinReverseWord = reverseWord.join("");
-            console.log(joinReverseWord);
-            
-            
-            // newWordArray.push(word)
-            wordArray[word] = joinReverseWord
-            wordArray = wordArray.join(" ");
-            console.log(wordArray)
+    // console.log(arr)
+    let newArr = []
     
-        }else{
-            
+    for(let i = 0; i < arr.length; i++) {
+        let word = arr[i]
+        // console.log(word)
+        if(word.length >= 5) {
+            let splitWord = word.split("");
+            // console.log(splitWord)
+            let reverseSplit = splitWord.reverse();
+            // console.log(reverseSplit)
+            word = reverseSplit.join("")
+            // console.log(joinReverse)
+            // joinReverse = arr[i]
+            // console.log(word)
+            word = arr[i]
+            arr = arr.join(" ")
+            console.log(arr);
         }
+        // if(word.length >= 5){
+        //     let splitWord = word.split(" ")
+        //     console.log(words) 
+        // }
+    }
+    // let word = words[i]
+
+    // let newStrArray = []
+
+    // words.forEach(function(word, i, words){
+    //     if (newStrArray.indexOf(word) === -1) {
+    //         newStrArray.push(word);
+    //     }
+    // });
     
-    });
+
+    // for(let i = 0; i < lenthOfString - 1; i++) {
+    //     if(word.length >= 5) {
+    //         let splitWord = word.split("");
+    //         console.log(splitWord);
+    //         let reverseWord = splitWord.reverse();
+    //         console.log(reverseWord);
+    //     }
+    // }
+    
+    // wordArray.forEach(function(word, index, wordArray){
+    //     arr[index] = word
+        
+        
+    //     if (word.length >= 5) {
+    //         let splitWordArray = word.split("")
+    //         console.log(splitWordArray);
+
+    //         let reverseWord = splitWordArray.reverse();
+    //         console.log(reverseWord);
+
+    //         let joinReverseWord = reverseWord.join("");
+    //         console.log(joinReverseWord);
+            
+            
+            
+    //     }else {
+            
+    //         return str
+    //     }
+        
+    
+    // });
 }
 
 
