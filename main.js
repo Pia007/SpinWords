@@ -20,3 +20,4 @@ function clearSwForm() {
         hideSwOutcome();
     }, 3000);
 };
+

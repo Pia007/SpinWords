@@ -10,8 +10,36 @@
 // spinWords("This is a test") => "This is a test" 
 // spinWords("This is another test") => "This is rehtona test"
 
-function spinWords(str) {
+function spinWords(words) {
+    //convert the word/s to an array
+    let wordArray = words.split(" ");
+    // confirm that the input is now an array
+    console.log(wordArray)
+    let newWordArray = [];
+
+    wordArray.forEach(function(word, arr){
+        
+        if (word.length >= 5) {
+            let splitWordArray = word.split("")
+            console.log(splitWordArray);
+
+            let reverseWord = splitWordArray.reverse();
+            console.log(reverseWord);
+
+            let joinReverseWord = reverseWord.join("");
+            console.log(joinReverseWord);
+            
+            
+            // newWordArray.push(word)
+            wordArray[word] = joinReverseWord
+            wordArray = wordArray.join(" ");
+            console.log(wordArray)
     
+        }else{
+            
+        }
+    
+    });
 }
 
 
@@ -19,4 +47,5 @@ console.log(spinWords("Hey fellow warriors"));
 console.log(spinWords("This is a test"));
 console.log(spinWords("This is another test"));
 console.log(spinWords("This is Reskill Americans"));
-console.log(spinWords("Javascript is not easy"));
+console.log(spinWords("Javascript"));
+console.log(spinWords("Fun"));
