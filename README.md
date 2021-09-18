@@ -26,7 +26,8 @@ The form automatically resets 5 seconds after the string is evaluated.
 #### FILES: 
 There are two JavaScript files. Main.js contains the function and additional coding neccessary to connect to the html. Spin.js has the plain function.
 
-![image](https://user-images.githubusercontent.com/66088725/132406853-0c13d47c-a99b-4ca8-afa9-229facfccd61.png)
+![image](https://user-images.githubusercontent.com/66088725/133870496-2b21bc5b-2eca-40be-941e-82682b2d87ca.png)
+
 
 
 ### Links
