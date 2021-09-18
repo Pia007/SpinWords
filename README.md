@@ -21,7 +21,7 @@ Two Sum Function
 For this [Code Wars](https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript) challenge, write a function that takes in a string of one or more words, and returns the same string. But, words with five or more letter will be reversed. in the dashboard, the user inputs a word/words, with each separated by a "space", and clicks the button to evaluate it. Additionally, if the input does not fit the criteria for evaluation, the user is prompted to try again. 
 
 #### NOTE: 
-The form automatically resets 3 seconds after the numbers are evaluated.
+The form automatically resets 5 seconds after the string is evaluated.
 
 #### FILES: 
 There are two JavaScript files. Main.js contains the function and additional coding neccessary to connect to the html. Spin.js has the plain function.
@@ -41,8 +41,8 @@ There are two JavaScript files. Main.js contains the function and additional cod
 - Semantic HTML5 Markup
 - JavaScript
   - Array Methods
+  - String Methods
   - Document Object Model
-  - Objects
   - For Loops
   - Template Literals
 - CSS3
@@ -51,7 +51,7 @@ There are two JavaScript files. Main.js contains the function and additional cod
 
 ### What I learned
 
-<!-- Understanding the "two sum" function was a challenge, initially. I had to figure out how to use objects and arrays together. Implementing a dashboard that would give the user feedback was challenging.  -->
+I learned to work through the challenge by using a "unpack & re-pack" in approach.  Meaning that, I started with the whole string and unpacked it until the characters of the substring were accessible; then re-packed (or stepped backward) until a string was returned.
 
 
 ## Author

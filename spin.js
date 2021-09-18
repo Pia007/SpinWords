@@ -12,78 +12,26 @@
 
 function spinWords(str) {
 
-    let lenthOfString = str.length;
+    //convert the string to an array
+    let words = str.split(" ");
 
-    //convert the word/s to an array
-    let arr = str.split(" ");
     // confirm that the input is now an array
-    // console.log(arr)
-    let newArr = []
+    console.log(words)
     
-    for(let i = 0; i < arr.length; i++) {
-        let word = arr[i]
-        // console.log(word)
-        if(word.length >= 5) {
-            let splitWord = word.split("");
-            // console.log(splitWord)
-            let reverseSplit = splitWord.reverse();
-            // console.log(reverseSplit)
-            word = reverseSplit.join("")
-            // console.log(joinReverse)
-            // joinReverse = arr[i]
-            // console.log(word)
-            word = arr[i]
-            arr = arr.join(" ")
-            console.log(arr);
+    //get the length of the array 
+    let lengthOfWords = words.length
+    console.log(lengthOfWords)
+
+    //using a for loop, check each word, i, in the array
+    for(let i = 0; i < lengthOfWords; i++){
+        //if a word the array has 5 or more letters
+        if(words[i].length >= 5) {
+            // split the word, reverse it, then join the letters
+            words[i] = words[i].split('').reverse().join('');
         }
-        // if(word.length >= 5){
-        //     let splitWord = word.split(" ")
-        //     console.log(words) 
-        // }
     }
-    // let word = words[i]
-
-    // let newStrArray = []
-
-    // words.forEach(function(word, i, words){
-    //     if (newStrArray.indexOf(word) === -1) {
-    //         newStrArray.push(word);
-    //     }
-    // });
-    
-
-    // for(let i = 0; i < lenthOfString - 1; i++) {
-    //     if(word.length >= 5) {
-    //         let splitWord = word.split("");
-    //         console.log(splitWord);
-    //         let reverseWord = splitWord.reverse();
-    //         console.log(reverseWord);
-    //     }
-    // }
-    
-    // wordArray.forEach(function(word, index, wordArray){
-    //     arr[index] = word
-        
-        
-    //     if (word.length >= 5) {
-    //         let splitWordArray = word.split("")
-    //         console.log(splitWordArray);
-
-    //         let reverseWord = splitWordArray.reverse();
-    //         console.log(reverseWord);
-
-    //         let joinReverseWord = reverseWord.join("");
-    //         console.log(joinReverseWord);
-            
-            
-            
-    //     }else {
-            
-    //         return str
-    //     }
-        
-    
-    // });
+    // Output: convert the array back a string and 
+    return words.join(" ");
 }
 
 
