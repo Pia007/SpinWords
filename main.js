@@ -81,7 +81,7 @@ function spinWords(str) {
             //user feedback
             swOutcome.style.display = "block";
             swOutcome.style.color = "#ED8200";
-            swOutcome.innerHTML = `${original}`    
+            swOutcome.innerHTML = `${original}`;    
         }
     }
     
