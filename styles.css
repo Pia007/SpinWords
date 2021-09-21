@@ -83,6 +83,7 @@ body {
 @media screen and (max-width: 825px) {
     .spin-container {
         width: 80%;
+        margin: auto;
     }
     .sw-intro,
     .swEval {
@@ -118,7 +119,7 @@ body {
     }
     .sw-btn-check,
     .sw-btn-reset {
-        font-size: 15px;;
+        font-size: 15px;
     }
 }
 
